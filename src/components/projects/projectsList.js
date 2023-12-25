@@ -3,12 +3,12 @@ const projects = [
     title: "Events Ticketing Management",
     image: "/projects/tickex-project.png",
     description:
-      "Followed MVC principles to designed and build a full-stack web app using Django and PostgreSQL, enabling users to buy, sell, and manage events and venues. Showcased problem-solving skills while implementing the relational database tables. Collaborated with team members and showcased strong communication skills to achieve project goals.",
+      "Followed MVC principles to design and build a full-stack web app using Django and PostgreSQL, enabling users to buy, sell, and manage events and venues. Showcased problem-solving skills while implementing the relational database tables. Collaborated with team members and showcased strong communication skills to achieve project goals.",
     tags: ["Django", "PostgreSQL", "MVC", "Bootstrap", "Vercel"],
   },
   {
     title: "Fragments Full Stack App",
-    image: "/skills/aws.svg",
+    image: "/projects/aws_project.jpg",
     description:
       "Developed a scalable AWS-deployed microservice for handling text and image fragments. The service offers a REST API for CRUD operations and data conversion, with Next.js for front-end interaction. The project, developed on GitHub, includes a CI pipeline with Jest and Hurl for testing.",
       tags: [

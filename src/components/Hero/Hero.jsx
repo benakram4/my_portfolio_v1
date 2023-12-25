@@ -1,15 +1,6 @@
 'use client';
+import { getScrollElementById } from "@/util/helpers"
 import Link from "next/link";
-
-const getScrollElementById = (event,id) => {
-  event.preventDefault();
-  const href = event.currentTarget.href;
-  const elem = document.getElementById(id);
-  window.scrollTo({
-    top: elem?.getBoundingClientRect().top,
-    behavior: "smooth",
-  });
-};
 
 import SocialIcons from "./SocialIcons";
 
