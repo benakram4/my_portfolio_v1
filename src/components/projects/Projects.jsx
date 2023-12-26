@@ -1,5 +1,5 @@
-import projects from "./projectsList";
-import Project from "@/components/projects/Project";
+import projects from "./projectsList.js";
+import Project from "@/components/Projects/Project";
 
 export default function Projects() {
   return (
