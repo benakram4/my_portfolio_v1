@@ -1,5 +1,5 @@
 import projects from "./projectsList.js";
-import Project from "@/components/Projects/Project";
+import Project from "@/components/Projects/Project.jsx";
 
 export default function Projects() {
   return (
