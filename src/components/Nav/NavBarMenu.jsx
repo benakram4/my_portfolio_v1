@@ -1,5 +1,4 @@
 import NavLink from "@/components/Nav/NavLink";
-import Link from "next/link";
 //  Nav Bar for big screens
 export default function NavBarMenu() {
   return (

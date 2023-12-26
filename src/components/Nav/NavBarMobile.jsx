@@ -10,7 +10,6 @@ export default function NavBarMobile() {
   const toggleMobileMenu = () => {
     setIsExpanded(!isExpanded);
     console.log("Clicked!");
-    console.log(isExpanded);
   };
 
   return (
@@ -22,25 +21,16 @@ export default function NavBarMobile() {
       >
         <ul className="space-y-2 px-2 pb-3 pt-2 list-none">
           {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-          <NavLink  href="/" onClick={toggleMobileMenu}>
-            Home
+          <NavLink  id="about" handleMobile={toggleMobileMenu}>
+            About
           </NavLink>
 
-          <NavLink href="/projects" onClick={toggleMobileMenu}>
-            Projects
+          <NavLink id="skills" handleMobile={toggleMobileMenu}>
+            Skills
           </NavLink>
 
-          <NavLink href="/contact" onClick={toggleMobileMenu}>
-            Contact
-          </NavLink>
-
-          <NavLink
-            href="https://drive.google.com/file/d/1EUP30Hf2CnHIAbgPZ2W6FVS-GudSfglW/view?usp=sharing"
-            onClick={toggleMobileMenu}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Resume
+          <NavLink id="projects" handleMobile={toggleMobileMenu}>
+          Projects
           </NavLink>
         </ul>
       </div>
