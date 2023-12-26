@@ -31,6 +31,7 @@ export default function Skills() {
                       src={`/skills/${item.image}`}
                       height={60}
                       width={60}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       alt={item.name}
                       title={item.name}
                       style={{

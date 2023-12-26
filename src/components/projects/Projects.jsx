@@ -16,6 +16,8 @@ export default function Projects() {
               imgSrc={project.image}
               tags={project.tags}
               key={project.title}
+              repo={project?.repo}
+              live={project?.live}
             />
           ))}
         </div>

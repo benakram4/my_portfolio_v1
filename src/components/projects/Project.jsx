@@ -1,6 +1,14 @@
 import Image from "next/image";
+import BtnLink from "@/components/BtnLink";
 
-export default function Project({ title, description, imgSrc, tags }) {
+export default function Project({
+  title,
+  description,
+  imgSrc,
+  tags,
+  repo,
+  live,
+}) {
   return (
     <div className="mb-6 lg:mb-0">
       <div className="relative block rounded-lg bg-white/10 dark:bg-neutral-700/10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
@@ -22,7 +30,11 @@ export default function Project({ title, description, imgSrc, tags }) {
           <p className="mb-6 text-stone-800 dark:text-stone-200">
             {description}
           </p>
-          <div className="flex flex-wrap">
+          <div className="flex items-center justify-center">
+            {repo && <BtnLink href={repo}>Github</BtnLink>}
+            {live && <BtnLink href={live}>View Live</BtnLink>}
+          </div>
+          <div className="my-2 flex flex-wrap justify-center">
             {tags.map((tag) => (
               <p
                 className="my-1 mr-4 flex h-8 items-center rounded-full border-2 border-[#9b5de5] bg-[#eceff1] bg-[transparent] px-3 py-0 text-[13px] text-bold text-stone-800 dark:text-stone-200"

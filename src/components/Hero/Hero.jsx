@@ -1,12 +1,11 @@
-'use client';
-import { getScrollElementById } from "@/util/helpers"
-import Link from "next/link";
-
+"use client";
+import { getScrollElementById } from "@/util/helpers";
+import BtnLink from "@/components/BtnLink";
 import SocialIcons from "./SocialIcons";
 
 function Hero() {
   return (
-    <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 ">
+    <div id="hero" className="mx-auto max-w-2xl py-28 sm:py-44 lg:py-52 ">
       <div className="text-center">
         <code className="dark:text-stone-200">Hi, My Name Is</code>
         {/* hr with black color */}
@@ -24,13 +23,13 @@ function Hero() {
           that live on smart devices !
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
-          <Link
-            href="mailto:benakdev@gmail.com"
-            className="rounded-md bg-[#9b5de5] px-3.5 py-2.5 text-sm font-semibold text-stone-200  dark:text-stone-200 shadow-sm hover:bg-[#8c43e4] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8333e4]"
+          <BtnLink
+            href="https://drive.google.com/file/d/1EUP30Hf2CnHIAbgPZ2W6FVS-GudSfglW/view?usp=sharing"
           >
-            Contact Me
-          </Link>
-          <button onClick={(event) => getScrollElementById(event,"about")}
+            My Resume
+          </BtnLink>
+          <button
+            onClick={(event) => getScrollElementById(event, "about")}
             className="text-sm font-semibold leading-6 text-gray-900 dark:text-stone-200"
           >
             About Me <span aria-hidden="true">→</span>

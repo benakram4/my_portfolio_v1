@@ -1,10 +1,9 @@
-export const getScrollElementById = (event,id) => {
+export const getScrollElementById = (event, id) => {
   event.preventDefault();
-  const href = event.currentTarget.href;
   const elem = document.getElementById(id);
+  const elemPosition = elem?.offsetTop / 1.1;
   window.scrollTo({
-    top: elem?.getBoundingClientRect().top,
+    top: elemPosition,
     behavior: "smooth",
   });
 };
-

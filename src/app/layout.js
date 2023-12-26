@@ -14,9 +14,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} dark`}>
-        <Background>
-          <NavBar>{children}</NavBar>
-        </Background>
+        <NavBar>
+          <Background>{children}</Background>
+        </NavBar>
       </body>
     </html>
   );

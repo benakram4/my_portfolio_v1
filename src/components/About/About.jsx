@@ -9,6 +9,7 @@ export default function About() {
             <div className="hidden shrink-0 grow-0 basis-auto lg:flex lg:w-6/12 xl:w-4/12">
               <Image
                 src="/avatar/AvatarMaker.svg"
+                priority
                 width={500}
                 height={500}
                 alt="Trendy Pants and Shoes"
@@ -51,10 +52,14 @@ export default function About() {
                   advance and expand my skill set through mentorship and
                   challenging projects.
                 </p>
-                <p className="text-stone-800 dark:text-stone-200">
+                <p className="text-stone-800 dark:text-stone-200 mb-6">
                   In my free time, I love playing soccer and I am a big fan of
                   AC Milan. I also enjoy boulder climbing, going the gym,
                   reading books (mainly science), and meditating.
+                </p>
+                <p className="text-stone-800 dark:text-stone-200">
+                My favorite quote: <br/>
+                <strong className="text-[#9b5de5]">“Tell me and I forget, teach me and I may remember, involve me and I learn.”</strong> - Benjamin Franklin
                 </p>
               </div>
             </div>
