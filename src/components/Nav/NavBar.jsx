@@ -12,15 +12,9 @@ import { darkModeAtom } from "@/store";
 export default function Header({ children }) {
   const [darkMode, setDarkMode] = useAtom(darkModeAtom);
 
-  // On component mount, check if dark mode is enabled in local storage
-  useEffect(() => {
-    const isDarkMode = localStorage.getItem("darkMode") === "true";
-    setDarkMode(isDarkMode);
-  }, []);
-
   // Whenever darkMode state changes, update the local storage and the class on the body
   useEffect(() => {
-    localStorage.setItem("darkMode", darkMode);
+    localStorage.setItem("darkMode", darkMode.toString());
     document.body.classList.toggle("dark", darkMode);
   }, [darkMode]);
 
