@@ -31,7 +31,7 @@ const projects = [
     title: "Metropolitan Museum Gallery",
     image: "/projects/metropolitan-project.png",
     repo: "https://github.com/benakram4/metropolitan_museum",
-    // live: "https://metropolitanmuseum.vercel.app/",
+    live: "https://metropolitanmuseum.vercel.app/",
     description:
       "Built a user-friendly Next.js web app for users to browse and save favorite items from the Metropolitan Museum Gallery API. Secured user authentication using bcrypt and stored data in MongoDB. Demonstrated high degree of self-motivation and diligence, independently driving the project to completion ahead of the anticipated timeline.",
     tags: ["Next.js", "bcrypt", "MongoDB", "Bootstrap", "Vercel"],
