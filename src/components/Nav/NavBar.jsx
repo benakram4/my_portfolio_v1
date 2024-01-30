@@ -35,7 +35,7 @@ export default function Header({ children }) {
           />
         </div>
         {/* background */}
-        <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8 backdrop-blur-md ">
+        <div className="mx-auto max-w-8xl px-8 sm:px-6 lg:px-8 backdrop-blur-md ">
           <div className="relative flex h-16 items-center justify-between">
             <BurgerMenu />
             <div
