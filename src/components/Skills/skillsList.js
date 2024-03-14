@@ -3,6 +3,7 @@ const skills = [
     title: "Languages",
     items: [
       { name: "JavaScript", image: "javascript.svg" },
+      { name: "TypeScript", image: "typescript.svg"},
       { name: "Python", image: "python.svg" },
       { name: "C/C++", image: "cpp.svg" },
       { name: "HTML", image: "html5.svg" },
