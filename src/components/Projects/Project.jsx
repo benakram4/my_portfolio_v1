@@ -20,6 +20,7 @@ export default function Project({
               width={600}
               height={800}
               alt={title}
+              placeholder="blur"
             />
           </div>
         </div>

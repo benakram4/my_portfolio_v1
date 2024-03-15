@@ -8,7 +8,7 @@ export default function Projects() {
         <h2 className="mb-12 pb-4 text-center text-3xl font-bold text-stone-900 dark:text-stone-100">
           Projects I Am Proud Of
         </h2>
-        <div className="grid gap-6 lg:grid-cols-3 xl:gap-x-12">
+        <div className="grid gap-8 lg:grid-cols-2 lg:px-14 xl:gap-x-18">
           {projects.map((project) => (
             <Project
               title={project.title}
